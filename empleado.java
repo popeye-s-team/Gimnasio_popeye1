@@ -1,6 +1,7 @@
 import java.util.Date;
 import java.util.UUID;
 
+
 public class Empleado {
     private String dni;
     private String nombre;
@@ -11,6 +12,10 @@ public class Empleado {
     private String tipo_empleado;
     private String usuario;
     private String contrasena;
+
+    public Empleado(){
+        
+    }
 
     public Empleado (String dni, String nombre, Date fecha_nacimiento, float salario, String telefono, UUID id, String tipo_empleado, String usuario, String contrasena) {
         this.dni=dni;
