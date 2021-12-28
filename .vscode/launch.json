@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch prueba",
+            "request": "launch",
+            "mainClass": "prueba",
+            "projectName": "GIMNASIO_POPEYE_5f5487a3"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",
