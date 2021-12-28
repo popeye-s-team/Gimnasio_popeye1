@@ -7,5 +7,11 @@ public class Actividad {
     private int aforo_max;
     private String sala;
 
-    public 
+    public Actividad (UUID id, String tipo, String horario, int aforo_max, String sala){
+        this.id = id;
+        this.tipo=tipo;
+        this.horario=horario;
+        this.aforo_max= aforo_max;
+        this.sala=sala;
+    }
 }
