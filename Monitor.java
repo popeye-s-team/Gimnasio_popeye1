@@ -4,5 +4,5 @@ import java.util.UUID;
 public class Monitor extends Empleado{
 
     
-    super 
+    
 }
