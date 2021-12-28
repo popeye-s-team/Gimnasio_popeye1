@@ -12,7 +12,7 @@ public class Empleado {
     private String usuario;
     private String contrasena;
 
-    public Empleado(String dni, String nombre, Date fecha_nacimiento, float salario, String telefono, UUID id, String tipo_empleado, String usuario, String contrasena) {
+    public Empleado (String dni, String nombre, Date fecha_nacimiento, float salario, String telefono, UUID id, String tipo_empleado, String usuario, String contrasena) {
         this.dni=dni;
         this.nombre = nombre;
         this.fecha_nacimiento = fecha_nacimiento;
