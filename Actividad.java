@@ -5,5 +5,7 @@ public class Actividad {
     private String tipo;
     private String horario;
     private int aforo_max;
-    private String sala
+    private String sala;
+
+    public 
 }
