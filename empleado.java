@@ -32,4 +32,8 @@ public class Empleado {
         return contrasena;
     }
 
+    public String getTipoEmpleado(){
+        return tipo_empleado;
+    }
+
 }
