@@ -24,7 +24,7 @@ public class Main{
         Empleado e6 = new Empleado("68925689", "Iole Porras Miramontes", fecha5, 2800, "619 533 386", UUID.randomUUID(), "Monitor", "iole_porras", "iole22");
 
         Date fecha6 = new GregorianCalendar(1998, Calendar.DECEMBER, 15).getTime();
-        Empleado e6 = new Empleado("68925689", "Iole Porras Miramontes", fecha5, 2800, "619 533 386", UUID.randomUUID(), "Monitor", "iole_porras", "iole22");
+        Empleado e6 = new Empleado("68925689", "Belmiro Sandoval Gracia", fecha5, 2800, "619 533 386", UUID.randomUUID(), "Monitor", "iole_porras", "iole22");
 
         Socio s1 = new Socio("Pedrito1","p123","Pedro Garcia Lopez", "669785213", "pedro.g@gmail.com", "ES26387282", UUID.randomUUID());
         Socio s2 = new Socio("Lorena1","l123", "Lorena Villaespesa Santo", "473892099","lorena@gmail.com", "ES73845890", UUID.randomUUID());
