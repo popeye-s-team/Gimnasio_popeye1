@@ -26,4 +26,16 @@ public class Util {
         } 
         return numero;
     }
+    public boolean altaEmpleado(Empleado empleado){
+        if (!arrayEmpleados.contains(empleado)) {
+            arrayEmpleados.add(empleado);
+
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public void altaSocio(Socio socio){
+
+    }
 }
