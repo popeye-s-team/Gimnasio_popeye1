@@ -17,10 +17,10 @@ public class Entrenador extends Empleado{
     }
 
     public void anadir_socio(Socio socio){
-      Socio.add(socio);
+      socio_asignado.add(socio);
     }
 
     public void eliminar_socio(Socio socio){
-      Socio.remove(socio);
+      socio_asignado.remove(socio);
     }
 }
