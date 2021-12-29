@@ -24,4 +24,12 @@ public class Empleado {
         this.contrasena = contrasena;
     }
 
+    public String getUsuario(){
+        return usuario;
+    }
+
+    public String getContrasena(){
+        return contrasena;
+    }
+
 }
