@@ -1,13 +1,22 @@
 import java.util.ArrayList;
+
 public class Util {
     private static ArrayList<Socio> arraySocios = new ArrayList<>();
     private static ArrayList<Empleado> arrayEmpleados = new ArrayList<>();
-    
+    private static ArrayList <Actividad> arrayActividades = new ArrayList<>();
+    private static ArrayList <Servicios_adicionales> arrayServicios_adicionales = new ArrayList<>();
+
     public static ArrayList<Socio> getArraySocios(){
         return arraySocios;
     }
     public static ArrayList<Empleado> getArrayEmpleado(){
         return arrayEmpleados;
+    }
+    public static ArrayList<Actividad> getArrayActividades(){
+        return arrayActividades;
+    }
+    public static ArrayList<Servicios_adicionales> getArrayServicios_adicionales(){
+        return arrayServicios_adicionales;
     }
     public static int inicioSesion(String usuario, String contrasena) {
         int numero = -2;
@@ -49,5 +58,13 @@ public class Util {
         } else {
             return false;
         }
+    }
+
+    public void registrar_actividad (Actividad actividad){
+        arrayActividades.add(actividad);
+    }
+
+    public void registrar_Servicios_adicionales (Servicios_adicionales servicios_adicionales){
+        arrayServicios_adicionales.add(servicios_adicionales);
     }
 }
