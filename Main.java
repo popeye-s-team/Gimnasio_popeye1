@@ -110,6 +110,14 @@ public class Main{
         Util.altaEmpleado(e16);
         Util.altaEmpleado(e17);
         Util.altaEmpleado(e18);
-        
+        Util.registrar_actividad(cardio);
+        Util.registrar_actividad(piscina);
+        Util.registrar_actividad(fuerza);
+        Util.registrar_actividad(fitness);
+        Util.registrar_actividad(zumba);
+        Util.registrar_Servicios_adicionales(jacuzzi);
+        Util.registrar_Servicios_adicionales(spa);
+        Util.registrar_Servicios_adicionales(sauna);
+        Util.registrar_Servicios_adicionales(masaje);
     }
 }
