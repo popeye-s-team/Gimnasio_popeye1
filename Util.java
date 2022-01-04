@@ -60,11 +60,11 @@ public class Util {
         }
     }
 
-    public void registrar_actividad (Actividad actividad){
+    public static void registrar_actividad (Actividad actividad){
         arrayActividades.add(actividad);
     }
 
-    public void registrar_Servicios_adicionales (Servicios_adicionales servicios_adicionales){
+    public static void registrar_Servicios_adicionales (Servicios_adicionales servicios_adicionales){
         arrayServicios_adicionales.add(servicios_adicionales);
     }
 }
