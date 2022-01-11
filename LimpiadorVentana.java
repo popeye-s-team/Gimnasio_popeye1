@@ -1,3 +1,4 @@
+
 public class LimpiadorVentana extends javax.swing.JFrame {
 
 private Empleado limpiador;

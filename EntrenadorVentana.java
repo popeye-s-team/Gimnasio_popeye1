@@ -1,3 +1,4 @@
+
 import javax.swing.JOptionPane;
 
 public class EntrenadorVentana extends javax.swing.JFrame {
