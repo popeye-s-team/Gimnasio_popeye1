@@ -1,3 +1,4 @@
+package clases;
 import java.util.UUID;
 
 public class Socio {
