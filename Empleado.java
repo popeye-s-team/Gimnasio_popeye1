@@ -1,6 +1,7 @@
 import java.util.Date;
 import java.util.UUID;
 
+
 public class Empleado {
     private String dni;
     private String nombre;
@@ -23,17 +24,25 @@ public class Empleado {
         this.usuario = usuario;
         this.contrasena = contrasena;
     }
-
     public String getUsuario(){
         return usuario;
     }
 
+    public String getDni() {
+        return dni;
+    }
+    
+
     public String getContrasena(){
         return contrasena;
     }
-
     public String getTipoEmpleado(){
         return tipo_empleado;
     }
-
+    public String getNombre() {
+        return nombre;
+    }
+    public UUID getUUid(){
+        return id;
+    }
 }
