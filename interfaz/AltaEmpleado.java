@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import clases.Empleado;
 import javax.swing.JOptionPane;
 
 public class AltaEmpleado extends javax.swing.JFrame {
