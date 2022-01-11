@@ -44,6 +44,11 @@ public class MonitorVentana extends javax.swing.JFrame {
         });
 
         jButton2.setText("ACTIVIDADES MODIFICADAS");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("ATRÁS");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -95,11 +100,9 @@ public class MonitorVentana extends javax.swing.JFrame {
        ArrayList<Monitor> listaMonitores= Util.getInicializarMonitores();
         
         double puntuacionMedia = 0;
-        System.out.println(listaMonitores+"hola");
+       
         for (int i = 0; i < listaMonitores.size(); i++) {
             if (listaMonitores.get(i).getUsuario().equals(usuario)) {
-                System.out.println(listaMonitores.get(i).getUsuario());
-               
                 puntuacionMedia=listaMonitores.get(i).getPuntuaciones();
             }
         }
@@ -116,6 +119,16 @@ public class MonitorVentana extends javax.swing.JFrame {
         this.setVisible(false);
         Principal principal = new Principal();
         principal.setVisible(true);
+    }                                        
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        ArrayList<Actividad> arrayActs = Util.getArrayActividadModificada();
+       String[] lista = new String[arrayActs.size()];
+        for (int i = 0; i < arrayActs.size(); i++) {
+            lista[i]=arrayActs.get(i).getNombre()+" - "+arrayActs.get(i).getHorario()+ " - "+arrayActs.get(i).getAforo_max()+ " - "+arrayActs.get(i).getSala()+"\n";
+        }
+        JOptionPane.showMessageDialog(null, lista);
     }                                        
 
 

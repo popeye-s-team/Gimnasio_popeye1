@@ -2,19 +2,27 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
-/**
- *
- * @author b
- */
+
 public class Util {
 
     private static ArrayList<Socio> arraySocios = new ArrayList<>();
     private static ArrayList<Empleado> arrayEmpleados = new ArrayList<>();
     private static ArrayList<Actividad> arrayActividades = new ArrayList<>();   
+    private static ArrayList<Actividad> arrayActividadModificada = new ArrayList<>();
     private static ArrayList<ServiciosAdicionales> arrayServicios_adicionales = new ArrayList<>();
     private static HashMap<String, Empleado> zonasLimpieza = new HashMap<String, Empleado>();
     private static HashMap<Empleado, String> turnosLimpieza = new HashMap<Empleado, String>();
     private static ArrayList<Monitor> arrayMonitores = new ArrayList<>();
+    
+    public static ArrayList<Actividad> getArrayActividadModificada(){
+        return arrayActividadModificada;
+    }
+    
+    public static void altaActividadModificada(Actividad actividad) {
+        if (!arrayActividadModificada.contains(actividad)) {
+            arrayActividadModificada.add(actividad);
+        }
+    }
     
     public static void asignarTurno(Empleado e, String turno) {
         turnosLimpieza.put(e, turno);
