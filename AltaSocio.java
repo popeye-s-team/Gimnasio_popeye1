@@ -169,10 +169,10 @@ public class AltaSocio extends javax.swing.JFrame {
         //botón aceptar
         String usuario = jTextField1.getText();
         String contraseña = jPasswordField1.getText();
-        String nombre = jTextField3.getText();
+        String nombre = jTextField6.getText();
         String telefono = jTextField4.getText();
         String mail = jTextField5.getText();
-        String n_cuenta_bancaria = jTextField6.getText();
+        String n_cuenta_bancaria = jTextField3.getText();
         Socio socio = new Socio(usuario, contraseña, nombre, telefono, mail, n_cuenta_bancaria, UUID.randomUUID());
         Util.altaSocio(socio);
         JOptionPane.showMessageDialog(this, "El socio " + nombre + " ha sido dado de alta en el gimnasio", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
